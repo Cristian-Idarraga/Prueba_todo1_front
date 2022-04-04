@@ -1,0 +1,29 @@
+    .products-table {
+        width: 96%;
+        margin: 2%;
+    }
+    
+    td>button {
+        margin-right: 5px;
+    }
+    
+    .button-add {
+        display: flex;
+        justify-content: flex-end;
+        a {
+            margin-right: 1rem;
+            .add-text {
+                color: transparent;
+                transition: 300ms;
+            }
+            mat-icon {
+                font-weight: 500;
+                color: #3f51b5;
+            }
+        }
+        a:hover {
+            .add-text {
+                color: #3f51b5;
+            }
+        }
+    }

@@ -1,0 +1,44 @@
+.headerlist {
+    padding: 0;
+    margin: 0;
+    background-color: #3f51b5;
+    list-style: none;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+}
+
+li>a {
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 0px 5px;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+li>a.active {
+    background-color: #394aa8;
+}
+
+li>a:hover {
+    background-color: #dfdfdf;
+    color: #3f51b5;
+}
+
+li>a.active:hover {
+    background-color: #394aa8;
+    color: #ffffff;
+}
+
+mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito {
+    margin-right: 1rem;
+}

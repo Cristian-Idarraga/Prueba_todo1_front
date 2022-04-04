@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <nav>
+            <ul class="headerlist">
+                <li>
+                    <a mat-button routerLink="/products" routerLinkActive="active">
+                        <mat-icon>home</mat-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a mat-button routerLink="#" routerLinkActive="active">iniciar sesion</a>
+                </li>
+            </ul>
+        </nav>
+        <a routerLink="/order" *ngIf='getRoute() === "/products"' class="carrito" mat-raised-button [matBadge]="total$ | async" matBadgeColor="warn" title="ver carrito">
+            <mat-icon>shopping_cart</mat-icon>carrito
+        </a>
+    </mat-toolbar-row>
+</mat-toolbar>

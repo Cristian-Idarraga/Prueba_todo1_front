@@ -1,0 +1,9 @@
+.products-table {
+  width: 96%;
+  margin: 2%;
+}
+
+td > button {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=products-list.component.css.map */

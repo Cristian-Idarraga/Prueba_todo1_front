@@ -1,0 +1,12 @@
+<div *ngIf="product">
+    <div>
+        <img crossorigin="anonymous" src="https://images.pexels.com/photos/380954/pexels-photo-380954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="image product" width="300px">
+    </div>
+    <div>
+        <ul>
+            <li>Nombre: {{product.nombreProducto}} </li>
+            <li>Precio: {{product.precio | currency}}</li>
+        </ul>
+        <p>Cantidad Stock{{product.cantidadStock}}</p>
+    </div>
+</div>
